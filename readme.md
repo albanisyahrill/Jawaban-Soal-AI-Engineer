@@ -1,4 +1,4 @@
-# Sepsis Prediction Model - Technical Test
+# Technical Test
 
 ## 📋 Project Overview
 
@@ -93,7 +93,7 @@ project/
 
 5. **Check logs (if needed)**
    ```bash
-   docker logs sepsis-api
+   docker logs flask-api
    ```
 
 The API will be available at: `http://localhost:5000`
@@ -119,8 +119,8 @@ python predict.py
 
 ```json
 {
-  "prediction": [1],
-  "prediction_probability": [0.94]
+  "prediction": 1,
+  "prediction_probability": 0.94
 }
 ```
 
@@ -137,12 +137,9 @@ python predict.py
 
 - **Ensemble Approach**: Soft voting combines XGBoost (tree-based) and ANN (neural network) strengths
 - **K-Fold Validation**: Ensured model robustness across different data splits
-- **Manual Ensemble**: Custom implementation for flexible probability weighting
 
 ### Medical Data Considerations
 
-- **Conservative Approach**: Prioritized model interpretability and clinical relevance
-- **Validation Rigor**: Multiple validation methods despite high initial metrics
 - **Deployment Safety**: Comprehensive preprocessing pipeline matching training phase
 
 ### Performance Notes
