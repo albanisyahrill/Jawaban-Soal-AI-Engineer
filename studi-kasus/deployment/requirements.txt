@@ -1,0 +1,7 @@
+tensorflow
+flask
+pandas
+gunicorn
+xgboost
+scikit-learn
+requests
